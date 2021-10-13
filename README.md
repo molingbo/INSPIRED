@@ -1,1 +1,3 @@
-# INSPIRED
+# INSPIRED: A Transparent Dialogue Dataset for Interactive Semantic Parsing
+
+Existing studies on semantic parsing focus primarily on mapping a natural-language utterance to a corresponding logical form in a one-shot setting. However, because natural language can contain a great deal of ambiguity and variability, this is a difficult challenge. In this work, we investigate a decompositional interactive semantic parsing framework, which shows the user how a complex question is answered step by step and enables them to make corrections through natural-language feedback for individual steps. We focus on question answering over knowledge bases (KBQA) as an instantiation of our framework, aiming to increase user understanding of the parsing process and confidence in the final answer.  To do so, we construct ***INSPIRED***, a crowdsourced transparent dialogue dataset derived from the ComplexWebQuestions dataset.
