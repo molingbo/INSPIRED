@@ -2,7 +2,7 @@
 
 Existing studies on semantic parsing focus primarily on mapping a natural-language utterance to a corresponding logical form in one turn. However, because natural language can contain a great deal of ambiguity and variability, this is a difficult challenge. In this work, we investigate an interactive semantic parsing framework that explains the predicted logical form *step by step* in natural language and enables the user to make corrections through *natural-language feedback* for individual steps. We focus on question answering over knowledge bases (KBQA) as an instantiation of our framework, aiming to increase the transparency of the parsing process and help the user appropriately trust the final answer.  To do so, we construct ***INSPIRED***, a crowdsourced dialogue dataset derived from the **ComplexWebQuestions** dataset.
 
-<img width="700" alt="image" src="https://i.postimg.cc/xdTCxLn9/framework.png" div align=center>
+<img height="500" width="700" alt="image" src="https://i.postimg.cc/xdTCxLn9/framework.png">
 
 This repository will contain the dataset and code for our paper [Towards Transparent Interactive Semantic Parsing via Step-by-Step Correction](https://arxiv.org/abs/2110.08345).
 
