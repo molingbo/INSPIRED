@@ -55,3 +55,15 @@ Here is **an example dialogue** that can be seen from the user perspective in ou
 ## Code
 
 Code will be available later.
+
+## Citation
+```
+@misc{mo2021transparent,
+      title={Towards Transparent Interactive Semantic Parsing via Step-by-Step Correction}, 
+      author={Lingbo Mo and Ashley Lewis and Huan Sun and Michael White},
+      year={2021},
+      eprint={2110.08345},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
