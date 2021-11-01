@@ -6,7 +6,7 @@ Existing studies on semantic parsing focus primarily on mapping a natural-langua
 
 Here is **an example dialogue** that can be seen from the user perspective in our ***INSPIRED*** dataset. The agent turns illustrate our emphasis on transparency by explaining the predicted logical form step by step in natural language, along with intermediate answers, to the user for feedback.
 
-<div align=center><img width="400" alt="image" src="https://i.postimg.cc/x8xCfKsz/dialogue-example.png"></div>
+<div align=center><img width="350" alt="image" src="https://i.postimg.cc/x8xCfKsz/dialogue-example.png"></div>
 
 **The full process of our framework** is illustrated below for KBQA via interactive semantic parsing. In this framework, once the logical form for a given question is predicted by a base semantic parser, we decompose it into sub-logical forms (Logical Form Decomposition) and translate each sub-logical form to a natural language question (Sub-Question Generation), which can illustrate the steps of answering the question, allowing the user to see exactly how a final answer is found and be confident that it is correct or make corrections to individual steps through natural language feedback. With the feedback, parse correction module serves to correct the corresponding sub-logical form in a certain step. The user is allowed to provide feedback iteratively.
 
