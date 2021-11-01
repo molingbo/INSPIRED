@@ -4,7 +4,13 @@ This repository includes the dataset and will contain code for our paper [Toward
 
 Existing studies on semantic parsing focus primarily on mapping a natural-language utterance to a corresponding logical form in one turn. However, because natural language can contain a great deal of ambiguity and variability, this is a difficult challenge. In this work, we investigate an interactive semantic parsing framework that explains the predicted logical form *step by step* in natural language and enables the user to make corrections through *natural-language feedback* for individual steps. We focus on question answering over knowledge bases (KBQA) as an instantiation of our framework, aiming to increase the transparency of the parsing process and help the user appropriately trust the final answer.  To do so, we construct ***INSPIRED***, a crowdsourced dialogue dataset derived from the [**ComplexWebQuestions**](https://www.tau-nlp.org/compwebq) dataset.
 
-<img height="500" width="700" alt="image" src="https://i.postimg.cc/xdTCxLn9/framework.png">
+Here is <u>**an example dialogue**</u> that can be seen from the user perspective in our ***INSPIRED*** dataset. The agent turns illustrate our emphasis on transparency by explaining the predicted logical form step by step in natural language, along with intermediate answers, to the user for feedback.
+
+<div align=center><img width="400" alt="image" src="https://i.postimg.cc/x8xCfKsz/dialogue-example.png"></div>
+
+<u>**The full process of our framework**</u> is illustrated below for KBQA via interactive semantic parsing. In this framework, once the logical form for a given question is predicted by a base semantic parser, we decompose it into sub-logical forms (Logical Form Decomposition) and translate each sub-logical form to a natural language question (Sub-Question Generation), which can illustrate the steps of answering the question, allowing the user to see exactly how a final answer is found and be confident that it is correct or make corrections to individual steps through natural language feedback. With the feedback, parse correction module serves to correct the corresponding sub-logical form in a certain step. The user is allowed to provide feedback iteratively.
+
+<div align=center><img width="700" alt="image" src="https://i.postimg.cc/xdTCxLn9/framework.png"></div>
 
 
 
