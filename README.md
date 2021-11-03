@@ -15,7 +15,7 @@ Here is **an example dialogue** that can be seen from the user perspective in ou
 
 ## Data
 ### Dataset Download
-> The dataset can be downloaded under this path: `./data/dataset.jsonl`
+> The dataset can be downloaded in this [link](https://dl.orangedox.com/iziGri).
 
 ### Data Structure
 > In the dataset file, each line is a dictionary with several keys:
