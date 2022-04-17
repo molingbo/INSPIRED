@@ -54,7 +54,7 @@ Here is **an example dialogue** that can be seen from the user perspective in ou
 
 ## Code
 
-Code will be available later.
+Code will be available later. 
 
 ## Citation
 ```
