@@ -1,6 +1,6 @@
 # INSPIRED: Dataset for Interactive Semantic Parsing for Knowledge-Based Question Answering (KBQA)
 
-This repository includes the dataset and will contain code for our ACL'22 Finding paper [Towards Transparent Interactive Semantic Parsing via Step-by-Step Correction](https://arxiv.org/abs/2110.08345).
+This repository includes the dataset and code for our ACL'22 Finding paper [Towards Transparent Interactive Semantic Parsing via Step-by-Step Correction](https://arxiv.org/abs/2110.08345).
 
 Existing studies on semantic parsing focus primarily on mapping a natural-language utterance to a corresponding logical form in one turn. However, because natural language can contain a great deal of ambiguity and variability, this is a difficult challenge. In this work, we investigate an interactive semantic parsing framework that explains the predicted logical form *step by step* in natural language and enables the user to make corrections through *natural-language feedback* for individual steps. We focus on question answering over knowledge bases (KBQA) as an instantiation of our framework, aiming to increase the transparency of the parsing process and help the user appropriately trust the final answer.  To do so, we construct ***INSPIRED***, a crowdsourced dialogue dataset derived from the [ComplexWebQuestions](https://www.tau-nlp.org/compwebq) dataset.
 
