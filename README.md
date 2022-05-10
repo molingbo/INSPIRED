@@ -1,6 +1,6 @@
 # INSPIRED: Dataset for Interactive Semantic Parsing for Knowledge-Based Question Answering (KBQA)
 
-This repository includes the dataset and will contain code for our paper [Towards Transparent Interactive Semantic Parsing via Step-by-Step Correction](https://arxiv.org/abs/2110.08345).
+This repository includes the dataset and will contain code for our ACL'22 Finding paper [Towards Transparent Interactive Semantic Parsing via Step-by-Step Correction](https://arxiv.org/abs/2110.08345).
 
 Existing studies on semantic parsing focus primarily on mapping a natural-language utterance to a corresponding logical form in one turn. However, because natural language can contain a great deal of ambiguity and variability, this is a difficult challenge. In this work, we investigate an interactive semantic parsing framework that explains the predicted logical form *step by step* in natural language and enables the user to make corrections through *natural-language feedback* for individual steps. We focus on question answering over knowledge bases (KBQA) as an instantiation of our framework, aiming to increase the transparency of the parsing process and help the user appropriately trust the final answer.  To do so, we construct ***INSPIRED***, a crowdsourced dialogue dataset derived from the [ComplexWebQuestions](https://www.tau-nlp.org/compwebq) dataset.
 
@@ -54,7 +54,17 @@ Here is **an example dialogue** that can be seen from the user perspective in ou
 
 ## Code
 
-Code will be available later. 
+### SPARQL Query Process
+> Following [HSP](https://aclanthology.org/P19-1440.pdf), we preprocess the original SPARQL queries in CWQ dataset and convert them into simplified and compacted version.
+
+> Script is available at ```./data_process/preprocess_lf.py```
+
+### Translation
+> Given a processed SPARQL query above, we decompose it into a series of sub-queries. Then we create a template corpus for those predicates that appear in CWQ dataset. Our translation strategy then converts the sub-queries into templated sub-questions, which are the ones we show to the crowdworkers.
+
+> In addition to a template corpus for normal predicates, we also maintain two small corpuses to handle restriction predicates. Check our paper for more details.
+
+> Check ```./data_process/translation.py``` for translation script. Several corpora mentioned above are saved at ```./data_process/corpus```
 
 ## Citation
 ```
