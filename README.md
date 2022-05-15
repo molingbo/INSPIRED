@@ -64,7 +64,17 @@ Here is **an example dialogue** that can be seen from the user perspective in ou
 
 > In addition to a template corpus for normal predicates, we also maintain two small corpuses to handle restriction predicates. Check our paper for more details.
 
-> Check ```./data_process/translation.py``` for translation script. Several corpora mentioned above are saved at ```./data_process/corpus```
+> Check ```./data_process/translation.py``` for translation script including the logical form decomposition. Several corpora mentioned above are saved at ```./data_process/corpus```
+
+### Parse Correction with NL Feedback
+> Given a sub-question as NL feedback, the parse correction task is to convert it into a corrected sub-LF. Our experiments are mostly based on the implementation of seq2seq model on [HuggingFace](https://github.com/huggingface/transformers). We found that the [BART-large](https://aclanthology.org/2020.acl-main.703.pdf) model with inputs that leverage the dialogue history of sub-LFs and sub-questions achieves the best performance. Different dialogue histories are concatenated with the original input using a separate token  ```</s>```.
+
+> We release the best-performed checkpoints [here](https://drive.google.com/drive/folders/1NIdObXao45Tu1FGawk8og_AQdIRMQCOA?usp=sharing).
+
+### Sub-Question Generation
+> Sub-question generation aims to translate a sub-LF into a natural sub-question. Similarly, based on the HuggingFace, the BART-large model with the input containing both the complex question and the history of templated sub-questions performs the best.
+
+> The checkpoints are stored [here](https://drive.google.com/drive/folders/1AYMcV6J9X5F-8iJ6eaw_juKHXBfliiLk?usp=sharing).
 
 ## Citation
 ```
